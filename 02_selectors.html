@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to CSS</title>
+
+    <!-- Css Selectors -->
+    <style>
+        /* Css Selectors */
+        /*
+          Create selector :
+          type{
+          property: value;
+          property: value;
+          property: value;
+          ......
+          }
+          */
+
+        /*Tag selector*/
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1, h2, h3 {
+            background-color: blue;
+            color: white;
+            text-align:center;
+            padding: 16px;
+            border-radius: 8px;
+            box-shadow: 10px 10px 10px black;
+            border: 3px solid darkblue;
+
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 150%;
+        }
+        code{
+            background-color: black;
+            color: white;
+            font-size: 22px;
+            font-family: monospace;
+            border-radius: 4px;
+            padding: 4px;
+        }
+        mark{
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 10px;
+        }
+        /* class selector */
+        .main-word{
+            color: rgb(54, 188, 218);
+        }
+        .styled{
+            color: red;
+            font-weight: normal;
+            text-decoration: underline;
+        }
+        .serif-font{
+            font-family: serif;
+        }
+        .sans-serif-font{
+            font-family: sans-serif;
+        }
+        .monospace-font{
+            font-family: monospace;
+        }
+        .cursive-font{
+            font-family: cursive;
+        }
+        .fantasy-font{
+            font-family: fantasy;
+        }
+        /* Id selector */
+
+        #main-title{
+            background-color: rgb(0, 213, 255);
+            color: black;
+            border-color: black;
+        }
+        #main-title{
+            background-color: orange;
+        }
+        .letter{
+            color: red;
+            background-color: white;
+           font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="main-title">Intro to <abbr title="Cascading Style Sheets">CSS</abbr> </h1>
+    <p> <span class="letter">L</span>orem ipsum dolor sit amet.
+        <br>
+        H<sub>2</sub>CO<sub>3</sub> <br> 2<sup>3</sup> = 8</p>
+    <h2>Standart Font Family</h2>
+    <h3>Serif Font</h3>
+    <p class="serif-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, blanditiis!</p>
+    <h3>Sans-Serif Font</h3>
+    <p class="sans-serif-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, blanditiis!</p>
+    <h3>Monospace Font</h3>
+    <p class="monospace-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, blanditiis!</p>
+    <h3>Cursive Font</h3>
+    <p class="cursive-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, blanditiis!</p>
+    <h3>Fantasy Font</h3>
+    <p class="fantasy-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, blanditiis!</p>
+    <p class="fantasy-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, blanditiis!</p>
+    <p class="fantasy-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, blanditiis!</p>
+
+
+
+    <h2>Styling using CSS Selectors</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        A impedit quasi, officia fugit assumenda quaerat tempore.
+        Dignissimos nesciunt harum quis?   <br>
+        Create variable : <code>a = 15</code>   <br><br>
+        Print variable : <code> print(f"Variable = {a}")</code><br> <br>
+        Enter text from keyboard : <code>input()</code>
+
+    </p>
+    <hr>
+    <p>Lorem ipsum dolor,
+        <mark class="main-word">sit amet consectetur </mark> adipisicing elit.
+        A impedit quasi,
+        <mark class="styled">sit amet consectetur </mark> officia fugit
+        assumenda quaerat tempore.
+        <mark  class="main-word">sit amet consectetur </mark>
+        Dignissimos nesciunt harum quis?</p>
+    <h2>Styling using CSS Selectors</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        A impedit quasi, officia fugit assumenda quaerat tempore.
+        Dignissimos nesciunt harum quis?</p>
+    <h2>Styling using CSS Selectors</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        A impedit quasi, officia fugit assumenda quaerat tempore.
+        Dignissimos nesciunt harum quis?</p>
+
+
+    <h2 style="background-color: blue; color: white;
+    text-align: center;">Inline styles</h2>
+    <p style="color: rgb(102, 142, 215);font-weight: 600;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Unde assumenda architecto eum! Neque odit aut at unde
+        iure illum dolores voluptatibus deleniti aliquam,
+        beatae atque facilis saepe, quod et harum.</p>
+    <p style="color: rgb(70, 124, 196);font-weight: 600;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Unde assumenda architecto eum! Neque odit aut at unde
+        iure illum dolores voluptatibus deleniti aliquam,
+        beatae atque facilis saepe, quod et harum.</p>
+    <p style="color: rgb(86, 163, 230);font-weight: 600;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Unde assumenda architecto eum! Neque odit aut at unde
+        iure illum dolores voluptatibus deleniti aliquam,
+        beatae atque facilis saepe, quod et harum.</p>
+
+
+
+
+</body>
+
+</html>
