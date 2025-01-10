@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <style>
+        .custom-ul-style{
+            list-style-type: square;
+            list-style-position: inside;
+            padding: 40px;
+            list-style-image: url(./markers/leaf.png);
+        }
+        ol{
+            list-style-type:upper-roman;
+        }
+        ol>li{
+            color: red;
+        }
+        ol>li::marker{
+            color: rgb(0, 255, 76);
+            font-weight: bold;
+        }
+        .attr-class{
+            list-style-type: decimal;
+           
+        }
+        dt{
+            font-weight: bold;
+            color: darkgreen;
+        }
+        dd{
+            color: rgb(215, 169, 83);
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .non-style{
+            list-style-type: none;
+            counter-reset: number;
+        }
+        .non-style li{
+            color: white;
+        }
+        .non-style li::before{
+            content: counter(number) ') ';
+            counter-increment: number;
+        }
+        .custom-marker-before{
+            list-style-type: none;
+            font-style: italic;
+        }
+        .custom-marker-before li::before{
+           content: '- ';
+           color: rgb(255, 255, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Working with Lists</h1>
+    <h2>Custom marker</h2>
+    <ol class="non-style">
+        <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+        <li>Quidem esse rerum impedit praesentium incidunt laboriosam.</li>
+        <li>Voluptatem quod nisi dolorum ad! Blanditiis, optio.</li>
+        <li>Reprehenderit debitis aperiam eos fugit quidem commodi.</li>
+        <li>Esse provident deleniti blanditiis animi numquam suscipit?</li>
+        <li>Iusto, voluptate ab nesciunt saepe obcaecati culpa?</li>
+        <li>Soluta nostrum aliquam ex ratione, beatae ullam.</li>
+    </ol>
+    <ul class="custom-marker-before">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Rerum quia ex dignissimos vero eos ducimus.</li>
+        <li>Aspernatur minus enim praesentium dolor cumque expedita.</li>
+        <li>Soluta, quos omnis magni perferendis laudantium fugiat.</li>
+        <li>Quam esse similique cum repellendus sapiente quisquam.</li>
+    </ul>
+    <h2>Definition list</h2>
+    <dl>
+        <!-- dt - definition title -->
+        <dt>HTML</dt>
+        <!-- definition description -->
+        <dd>Lorem ipsum dolor, sit amet consectetur .
+            adipisicing elit. Quaerat voluptate cupiditate aut! Mollitia, temporibus tempora?</dd>
+        <dt>CSS</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Consequatur dolores voluptatum delectus sequi eum
+            totam iste adipisci, officia fugiat est.</dd>
+    </dl>
+    <h2>Multilevel List</h2>
+    <ol>
+        <li>Lorem ipsum dolor sit amet.
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Vero quos voluptatibus laborum natus?</li>
+                <li>Laboriosam, exercitationem? Excepturi, vel exercitationem!</li>
+                <li>Pariatur dolor ab quidem sint?</li>
+                <li>Officia enim sed corrupti dignissimos!</li>
+            </ul>
+        </li>
+       
+        <li>At accusantium ducimus voluptatum nesciunt.
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Vero quos voluptatibus laborum natus?</li>
+                <li>Laboriosam, exercitationem? Excepturi, vel exercitationem!</li>
+                <li>Pariatur dolor ab quidem sint?</li>
+                <li>Officia enim sed corrupti dignissimos!</li>
+            </ul>
+        </li>
+       
+        <li>Impedit amet architecto numquam molestiae!</li>
+        <li>Est perspiciatis reiciendis dignissimos sequi.</li>
+        <li>Ea id illo quos perspiciatis?</li>
+    </ol>
+
+
+    <h2>List attributes </h2>
+    <ol class="attr-class" start="10" reversed>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Assumenda laudantium vero rerum quaerat eligendi! Eveniet.</li>
+        <li>Expedita id corporis fuga delectus voluptates commodi?</li>
+        <li>Sequi odit numquam provident animi quos amet?</li>
+        <li>Tempora, reprehenderit provident. Dolor consectetur dicta numquam.</li>
+        <li value="25">Tempora, reprehenderit provident. Dolor consectetur dicta numquam.</li>
+        <li>Tempora, reprehenderit provident. Dolor consectetur dicta numquam.</li>
+        <li>Tempora, reprehenderit provident. Dolor consectetur dicta numquam.</li>
+        <li>Tempora, reprehenderit provident. Dolor consectetur dicta numquam.</li>
+        <li>Tempora, reprehenderit provident. Dolor consectetur dicta numquam.</li>
+    </ol>
+    <h2>Ordered list</h2>
+    <ol>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Assumenda laudantium vero rerum quaerat eligendi! Eveniet.</li>
+        <li>Expedita id corporis fuga delectus voluptates commodi?</li>
+        <li>Sequi odit numquam provident animi quos amet?</li>
+        <li>Tempora, reprehenderit provident. Dolor consectetur dicta numquam.</li>
+    </ol>
+
+
+    <h2>Custom Unordered list</h2>
+    <ul class="custom-ul-style">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam explicabo nemo esse facilis quaerat.
+        </li>
+        <li>Eligendi vel, tempore dolor consequuntur ipsum debitis amet adipisci, enim delectus autem dolores quia
+            eaque.</li>
+        <li>Cumque laudantium inventore porro quod ea magni, totam optio beatae placeat molestiae non repellat
+            voluptates.</li>
+        <li>Qui temporibus tempora et quas aliquam placeat velit, pariatur, modi laudantium optio quia fugit quo.</li>
+        <li>Rem nisi vitae repellendus corporis. Sunt, aliquid totam a eum distinctio porro facilis obcaecati iste.</li>
+    </ul>
+
+
+    <h2>Unordered list</h2>
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam explicabo nemo esse facilis quaerat.
+        </li>
+        <li>Eligendi vel, tempore dolor consequuntur ipsum debitis amet adipisci, enim delectus autem dolores quia
+            eaque.</li>
+        <li>Cumque laudantium inventore porro quod ea magni, totam optio beatae placeat molestiae non repellat
+            voluptates.</li>
+        <li>Qui temporibus tempora et quas aliquam placeat velit, pariatur, modi laudantium optio quia fugit quo.</li>
+        <li>Rem nisi vitae repellendus corporis. Sunt, aliquid totam a eum distinctio porro facilis obcaecati iste.</li>
+    </ul>
+    <h2>Ordered list</h2>
+    <ol>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Assumenda laudantium vero rerum quaerat eligendi! Eveniet.</li>
+        <li>Expedita id corporis fuga delectus voluptates commodi?</li>
+        <li>Sequi odit numquam provident animi quos amet?</li>
+        <li>Tempora, reprehenderit provident. Dolor consectetur dicta numquam.</li>
+    </ol>
+    
+</body>
+
+</html>
