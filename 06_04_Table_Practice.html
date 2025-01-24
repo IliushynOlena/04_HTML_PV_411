@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Table</title>
+    <style>
+        body{
+            padding: 15px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+           
+            text-align: center;
+            /* vertical-align: middle;
+            font-weight: 700;
+            font-size: x-large; */
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        caption{
+            text-align: right;
+            color: rgb(122, 122, 122);       
+            
+            
+        }
+        .col1{
+            background-color: rgb(209, 204, 198);
+        }
+        .col2{
+            background-color: rgb(124, 214, 250);
+        }
+        .col3{
+            background-color: rgb(62, 189, 89);    
+        }
+        .col4{
+            background-color: rgb(235, 193, 54);
+        }
+        .col5{
+            background-color: rgb(228, 72, 33);
+        }
+   
+        thead{
+            color: rgb(232, 241, 241);
+            border-bottom: 2px solid ;
+            
+        }
+        tbody{
+            color: rgb(232, 241, 241);
+        }
+        tfoot{
+            color: rgb(232, 241, 241);
+            border-top: 2px solid;
+        }
+        th,td{
+            padding: 18px 16px;
+        }
+        thead, tfoot{
+            text-transform: uppercase;
+        }
+        /*pseudo classes */
+        td:first-child,
+        th:first-child
+        {
+            color: rgb(122, 122, 122); 
+        }
+        td:first-child{
+            text-align: left;
+        }
+        span{
+            border: 2px solid white ;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            line-height: 25px;
+            font-weight: bold;
+       
+        }
+
+    </style>
+</head>
+<body>
+   
+    <table>
+        <caption> Table Title</caption>
+        <colgroup>
+            <col  class="col1">
+            <col  class="col2">
+            <col  class="col3">
+            <col  class="col4">
+            <col  class="col5">
+        </colgroup>
+        <thead>
+            <tr>
+                <th >Spetification</th>
+                <th>FREE</th>
+                <th>BASIC</th>
+                <th>STANDART</th>
+                <th>PREMIUM</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th >PRICE</th>
+                <th>$ 0.00</th>
+                <th>$ 9.99</th>
+                <th>$ 19.99</th>
+                <th>$ 29.99</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td >Lorem ipsum dolor</td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td >Ratione deserunt modi</td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td >Vel maiores odio</td>
+                <td><span>-</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td >Minus vel aperiam natus</td>
+                <td><span>-</span></td>
+                <td><span>-</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td >Provid minima sapiente</td>
+                <td><span>-</span></td>
+                <td><span>-</span></td>
+                <td><span>-</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td >Eveniet eaque excepturi</td>
+                <td><span>-</span></td>
+                <td><span>-</span></td>
+                <td><span>-</span></td>
+                <td><span>+</span></td>
+            </tr>
+        </tbody>
+      
+    </table>
+</body>
+</html>
