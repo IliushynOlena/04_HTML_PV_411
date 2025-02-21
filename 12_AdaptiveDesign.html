@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header{
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+          
+        }
+        nav{
+            background-color: lightcyan;
+            padding: 10px;
+        }
+        footer{
+            background-color: lightsalmon;
+            padding: 15px;
+        }
+        aside{
+            background-color: lightgray;
+            padding: 10px;
+           
+        }
+        aside:first-child{
+            flex-basis: 10%;
+        }
+        aside:last-child{
+            flex-basis: 20%;
+            background-color: coral;
+            /* display: none; */
+        }
+        main{
+            background-color: lightgreen;
+            padding: 20px;
+           
+            flex-basis:70%;
+        }
+        .container{
+            display: flex;
+            flex-grow: 1;
+            
+        }
+        @media screen and (max-width:800px) {
+            main{
+                flex-basis: 75%;
+            }
+            aside:last-child{         
+            display: none;
+        }
+        aside:first-child{
+            flex-basis: 25%;
+        }
+            
+        }
+        @media screen and (max-width:600px)
+         {
+            .container{
+                /* flex-direction:column-reverse; */
+                flex-direction:column;
+                
+            }
+            main
+            {
+                order: -1;
+            }
+            aside:last-child
+            {
+            display: block;
+        }
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <nav>Menu</nav>
+    <div class="container">
+        <aside>Left aside</aside>
+        <main>Main</main>
+        <aside>Right aside</aside>
+    </div>
+    <footer>Footer</footer>
+    
+</body>
+</html>
